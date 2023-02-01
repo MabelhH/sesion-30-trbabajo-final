@@ -1,0 +1,21 @@
+<div class="container"  >
+<div *ngFor="let li of lista">
+<h1>{{li.name}}</h1>
+<div class="row">
+<div class="col-6">
+
+<img [src]="li.imagen" alt="">
+</div>
+<div class="col-6">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit earum nobis non dolore impedit? Eos consectetur inventore repellat non architecto accusantium fugiat omnis saepe ullam error atque, quibusdam, obcaecati necessitatibus!</p>
+<p>{{li.costo}}</p>
+</div>
+</div>
+
+
+
+
+        <button type="submit" class="btn btn-primary" (click)="goback()">Atras</button>
+</div>
+    
+    

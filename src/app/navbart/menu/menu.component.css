@@ -1,0 +1,12 @@
+.menu{
+background-color: blueviolet;
+height: 90px;
+padding: 20px;
+
+}
+ul,li,a{
+    list-style: none;
+    border-radius: 6px;
+    margin: 4px;
+    
+}

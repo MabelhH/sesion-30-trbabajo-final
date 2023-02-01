@@ -1,0 +1,11 @@
+.registro{
+    width: 90%;
+    border-radius: 6px;
+    background-color: cornflowerblue;
+    padding: 20px;
+    margin-left: 45px;
+    margin-top: 40px;
+}
+label{
+    font-size: 20px;
+}

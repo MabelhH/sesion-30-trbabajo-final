@@ -1,0 +1,52 @@
+<div class="registro">
+    <h1 class="text-center fs-1">Productos</h1>
+    <hr>
+    <br>
+    <form [formGroup]="formRegistrar">
+        <div class="row">
+           <div class="col-1">
+             <label for="nombre"><b>Nombre:</b></label>
+           </div>
+            <div class="col-11">
+             <input type="text"  formControlName="nombre" class="form-control"  id="nombre">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-1">
+              <label for="descripcion"><b>Descripcion:</b></label>
+            </div>
+            <div class="col-11">
+              <input type="text" formControlName="descripcion" class="form-control"  id="descripcion">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-1">
+                <label for="costo"><b>Costo:</b></label>
+            </div>
+            <div class="col-5">
+              <input type="text" formControlName="costo" class="form-control" id="costo" >
+            </div>
+            <div class="col-1">
+                <label for="oferta"><b>Oferta:</b></label>
+            </div>
+            <div class="col-5">
+              <input type="text" formControlName="oferta" class="form-control" id="oferta">
+            </div>
+          </div><br>
+        <div class="row">
+            <div class="col-1">
+            <label for="imagen"><b>Imagen:</b></label>
+            </div>
+            <div class="col-11">
+            <input type="text"  formControlName="imagen" class="form-control" id="imagen">
+            </div>
+        </div>
+        <br>
+        <div class="">
+            <button type="submit" class="btn btn-info" (click)="registrar()">Registrar</button>
+        </div>
+    </form>
+</div>
+

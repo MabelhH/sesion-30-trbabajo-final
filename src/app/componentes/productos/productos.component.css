@@ -1,0 +1,13 @@
+.container{
+margin-top: 60px;
+}
+table{
+    text-align: center;
+    border: 2px solid blueviolet ;
+}
+td,th{
+    border: 2px solid blueviolet ;
+}
+th{
+    background-color: rgb(203, 161, 243);
+}

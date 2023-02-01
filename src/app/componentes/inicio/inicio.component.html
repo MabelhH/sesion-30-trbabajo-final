@@ -1,0 +1,51 @@
+<div id="carouselExampleCaptions" class="carousel slide imagen" >
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://amp.protocolo.org/extfiles/i-10311-cG.16806.1.jpg" class="d-block w-100" alt="..." width="1790"  height="900px">
+        <div class="carousel-caption d-none d-md-block">
+          <!-- <h1>Second slide label</h1> -->
+          <!-- <p>Some representative placeholder content for the second slide.</p> -->
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://telmex.com/documents/23521/66100/B_230118_img1.jpg/28395d03-5fd5-d0f9-e260-37160e3de7e9?t=1519232275000" class="d-block w-100" alt="..." width="1790"  height="900px">
+        <div class="carousel-caption d-none d-md-block">
+          <!-- <h1>Third slide label</h1> -->
+          <!-- <p>Some representative placeholder content for the third slide.</p> -->
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="tienda">
+  <h2>Productos</h2>
+  <div class="card-group productos">
+    <div *ngFor="let li of lista " class="cuadro1">
+        <h3>{{li.name}}</h3>
+          <img [src]="li.imagen" alt="..."  width="350px" height="200px">
+            <P class="card-text"></P>
+            <p></p>
+            <button type="button" class="btn btn-primary" (click)="vermas(li.id)">Ver Más</button>
+      </div>
+  </div>
+  <div class="card-group productos">
+    <div *ngFor="let li of lista02 " class="cuadro2">
+        <h3>{{li.name}}</h3>
+          <img [src]="li.imagen" alt="..."  width="350px" height="200px">
+            <P class="card-text"></P>
+            <p></p>
+            <button type="button" class="btn btn-primary" (click)="vermas(li.id)">Ver Más</button>
+      </div>
+  </div>

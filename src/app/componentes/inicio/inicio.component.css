@@ -1,0 +1,31 @@
+h2{
+   color:blueviolet;
+    margin-left: 55px;
+    font-size: 45px;
+}
+h3{
+    color: blueviolet;
+}
+p{
+    color: blueviolet;
+    font-size: 25px;
+}
+
+.productos{
+margin: 20px;
+margin-left: 35px;
+
+
+}
+.cuadro1{
+    margin: 20px;
+    border-radius: 6px;
+}
+.cuadro2{
+    margin: 20px;
+    border-radius: 6px;
+}
+
+.tienda{
+    color: aliceblue;
+}
