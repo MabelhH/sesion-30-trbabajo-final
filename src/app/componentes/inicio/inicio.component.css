@@ -14,24 +14,19 @@ h1{
 }
 
 .productos{
-width:90% ;
+width:80% ;
 margin: 20px;
 padding: 10px;
 margin-left: 35px;
-
-
 
 }
 .cuadro1{
     margin: 20px;
     border-radius: 6px;
     margin-left: 20px;
-    padding: 8px;
     
 }
-a{
-color: blueviolet;
-}   
+
    
 
 .cuadro2{
@@ -44,10 +39,11 @@ color: blueviolet;
     margin: 20px;
     border-radius: 6px;
     margin-left: 20px;
-   
-    
+     
 }
-
+a{
+    color: blueviolet;
+    }   
 .tienda{
    color: aliceblue;
    margin-top: 50px;
