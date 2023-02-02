@@ -29,23 +29,38 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  <div class="tienda">
-  <h2>Productos</h2>
+  <div class="tienda"><br>
+  <h2 class="titulo">Productos</h2>
   <div class="card-group productos">
     <div *ngFor="let li of lista " class="cuadro1">
-        <h3>{{li.name}}</h3>
-          <img [src]="li.imagen" alt="..."  width="350px" height="200px">
-            <P class="card-text"></P>
-            <p></p>
+        <h1>{{li.name}}</h1>
+          <img [src]="li.imagen" alt="..."  width="350px" height="200px"><br>
+          <br>
+            <P class="card-text">S/{{li.costo}}</P>
+            <p (click)="carrito()">agregar a carrito</p>
             <button type="button" class="btn btn-primary" (click)="vermas(li.id)">Ver Más</button>
       </div>
   </div>
   <div class="card-group productos">
     <div *ngFor="let li of lista02 " class="cuadro2">
-        <h3>{{li.name}}</h3>
-          <img [src]="li.imagen" alt="..."  width="350px" height="200px">
-            <P class="card-text"></P>
-            <p></p>
+        <h1>{{li.name}}</h1>
+          <img [src]="li.imagen" alt="..."  width="350px" height="200px"><br>
+          <br>
+            <P class="card-text">{{li.costo}}</P>
+            <p (click)="carrito()">agregar a carrito</p>
             <button type="button" class="btn btn-primary" (click)="vermas(li.id)">Ver Más</button>
       </div>
   </div>
+  <div class="card-group productos">
+    <div *ngFor="let prod of tienda " class="cuadro3">
+        <h2>{{prod.nombre}}</h2>
+          <img [src]="prod.imagen" alt="..."  width="350px" height="200px"><br>
+          <br>
+            <P class="card-text">S/{{prod.costo}}</P>
+            <p (click)="carrito()">agregar a carrito</p>
+            <button type="button" class="btn btn-danger" (click)="eliminar(prod)">eliminar</button> 
+            <button type="button" class="btn btn-primary" (click)="masproductos()">Ver Más</button> 
+    </div>
+  </div>
+  </div>
+

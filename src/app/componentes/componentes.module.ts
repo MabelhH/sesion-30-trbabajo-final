@@ -6,7 +6,9 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { InicioComponent } from './inicio/inicio.component';
 import { ProductosComponent } from './productos/productos.component';
 import { RegistrarprodComponent } from './registrarprod/registrarprod.component';
-
+import { MostrarComponent } from './mostrar/mostrar.component';
+import { CarritoComponent } from './carrito/carrito.component';
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -14,16 +16,25 @@ import { RegistrarprodComponent } from './registrarprod/registrarprod.component'
     RegistroComponent,
     InicioComponent,
     ProductosComponent,
-    RegistrarprodComponent
+    RegistrarprodComponent,
+    MostrarComponent,
+    CarritoComponent
   ],
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
+    MatDialogModule,
+
   ],
   exports:[
     LoginComponent,
-    RegistroComponent
+    RegistroComponent,
+    InicioComponent,
+    ProductosComponent,
+    RegistrarprodComponent,
+    MostrarComponent,
+    CarritoComponent
   ]
 
   

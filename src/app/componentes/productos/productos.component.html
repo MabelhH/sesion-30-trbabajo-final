@@ -12,16 +12,23 @@
     </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let lis of lista">
+      <tr *ngFor="let lis of lista ;let i=index">
         <td>{{lis.id}}</td>
         <td>{{lis.name}}</td>
         <td>{{lis.costo}}</td>
         <td>{{lis.oferta}}%</td>
         <td>{{lis.total}}</td>
-        <td><button type="button" class="btn btn-danger" (click)="eliminar()">borrar</button></td>
+        <td><button type="button" class="btn btn-danger" (click)="eliminardatos(i)">borrar</button></td>
       </tr>
-      <tr>
+      <tr *ngFor="let prod of tienda ">
+        <td>{{prod.item}}</td>
+        <td>{{prod.nombre}}</td>
+        <td>{{prod.costo}}</td>
+        <td>{{prod.oferta}}</td>
+        <td>{{prod.total}}</td>
+        <td><button type="button" class="btn btn-danger" (click)="eliminar(prod)">borrar</button></td>
+      </tr> 
     </tbody>
   </table>
-  <button type="button" class="btn btn-primary" (click)="agregar()">agragar Productos</button>
+  
 </div>

@@ -1,31 +1,56 @@
-h2{
-   color:blueviolet;
-    margin-left: 55px;
-    font-size: 45px;
+.titulo{
+    color:blueviolet;
+    margin-left: 77px;
+    font-size: 80px;
+    margin-top: 45px;
 }
-h3{
-    color: blueviolet;
-}
+
 p{
     color: blueviolet;
     font-size: 25px;
 }
+h1{
+ color:blueviolet; 
+}
 
 .productos{
+width:90% ;
 margin: 20px;
+padding: 10px;
 margin-left: 35px;
+
 
 
 }
 .cuadro1{
     margin: 20px;
     border-radius: 6px;
+    margin-left: 20px;
+    padding: 8px;
+    
 }
+a{
+color: blueviolet;
+}   
+   
+
 .cuadro2{
     margin: 20px;
     border-radius: 6px;
+    margin-left: 20px;
+   
+}
+.cuadro3{
+    margin: 20px;
+    border-radius: 6px;
+    margin-left: 20px;
+   
+    
 }
 
 .tienda{
-    color: aliceblue;
+   color: aliceblue;
+   margin-top: 50px;
+   margin: 50px;
+   background-color: aliceblue;
 }

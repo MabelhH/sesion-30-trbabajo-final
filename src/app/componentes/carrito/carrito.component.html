@@ -1,0 +1,27 @@
+<div class="container">
+<h1>Mis Pedidos</h1>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Item</th>
+        <th scope="col">Productos</th>
+        <th scope="col">Costo</th>
+        <th scope="col">Cantidad</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let lis of lista">
+        <td>{{lis.id}}</td>
+        <td>{{lis.name}}</td>
+        <td>{{lis.costo}}</td>
+        <td>{{lis.cantidad}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="text-end">total 900</p>
+  <div class="float-right">
+    <button>comprar</button>
+    
+  </div>
+</div>
+

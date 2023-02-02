@@ -12,7 +12,8 @@ import { PaginasModule } from './paginas/paginas.module';
 import { RouterModule } from '@angular/router';
 import { MenuComponent } from './navbart/menu/menu.component';
 import { NavbartModule } from './navbart/navbart.module';
-import { MostrarComponent } from './componetes/mostrar/mostrar.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 var config = {
   apiKey: environment.firebase.apiKey,
@@ -24,8 +25,7 @@ var config = {
 
 @NgModule({
   declarations: [
-    AppComponent,
-    MostrarComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -36,9 +36,9 @@ var config = {
     CoponentesModule,
     PaginasModule,
     NavbartModule,
-    RouterModule
-
-   
+    RouterModule,
+    BrowserAnimationsModule
+  
   ],
   providers: [],
   bootstrap: [AppComponent]

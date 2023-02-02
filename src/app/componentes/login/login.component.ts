@@ -31,7 +31,7 @@ export class LoginComponent {
     .then(
       response =>{
       console.log(response)
-      this.roter.navigate(['/home']);
+      this.roter.navigate(['/inicio']);
 
       }
     )

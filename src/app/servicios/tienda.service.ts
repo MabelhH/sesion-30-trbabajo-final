@@ -9,7 +9,7 @@ import { Observable, Observer } from 'rxjs';
 })
 export class TiendaService {
 
-  constructor(private auth:Auth, private firestore:Firestore ) { }
+  constructor(private auth:Auth, private firestore:Firestore  ) { }
 
   registrouser({email ,password}:any){
   return createUserWithEmailAndPassword(this.auth,email,password);
@@ -24,6 +24,15 @@ export class TiendaService {
    addProduct(tienda:tienda){
     const farmaciaRef = collection(this.firestore, 'tienda02');
   return addDoc(farmaciaRef, tienda) 
-     
+
   }
+  getFacrmacia():Observable<tienda[]>{
+    const farmaciaRef = collection(this.firestore, 'tienda02');
+    return collectionData(farmaciaRef, {idField:'id'}) as Observable<tienda[]>
+  }
+  deletedFarmacia(tienda:tienda){
+    const farmaciaRef = doc(this.firestore, `tienda02/${tienda.id}`)
+    return deleteDoc(farmaciaRef);
+  }
+  
 }

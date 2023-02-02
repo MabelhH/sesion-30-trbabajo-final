@@ -4,11 +4,37 @@
     <br>
     <form [formGroup]="formRegistrar">
         <div class="row">
+            <div class="col-1">
+              <label for="item"><b>Item</b></label>
+            </div>
+            <div class="col-11">
+              <input type="text" formControlName="item" class="form-control"  id="item">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-1">
+              <label for="id"><b>Id</b></label>
+            </div>
+            <div class="col-11">
+              <input type="text" formControlName="id" class="form-control"  id="id">
+            </div>
+        </div><br>
+        <div class="row">
            <div class="col-1">
              <label for="nombre"><b>Nombre:</b></label>
            </div>
             <div class="col-11">
              <input type="text"  formControlName="nombre" class="form-control"  id="nombre">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-1">
+              <label for="total"><b>Total:</b></label>
+            </div>
+            <div class="col-11">
+              <input type="text" formControlName="total" class="form-control"  id="total">
             </div>
         </div>
         <br>

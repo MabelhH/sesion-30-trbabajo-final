@@ -1,0 +1,21 @@
+<div class="container"> 
+    <div *ngFor="let prod of tienda">
+        <p>{{prod.nombre}}</p>
+        <div class="row">
+          <div class="col-6">
+           <img [src]="prod.imagen" alt="">
+          </div>
+          <div class="col-6">
+             <p>{{prod.descripcion}}</p>
+             <p>{{prod.costo}}</p>  
+          </div>
+    </div>
+    </div>
+    
+
+    <br>
+    <button type="submit" class="btn btn-danger" (click)="goback()">Atras</button>
+    <br>
+    
+    
+</div>
