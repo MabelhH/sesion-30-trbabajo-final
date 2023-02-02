@@ -1,21 +1,18 @@
-<div class="container"> 
-    <div *ngFor="let prod of tienda">
-        <p>{{prod.nombre}}</p>
+<div class="mostrar"> 
+    <div>
+        <h1>verduras</h1><br>
         <div class="row">
-          <div class="col-6">
-           <img [src]="prod.imagen" alt="">
-          </div>
-          <div class="col-6">
-             <p>{{prod.descripcion}}</p>
-             <p>{{prod.costo}}</p>  
-          </div>
+            <div class="col-4">
+              <img src="https://th.bing.com/th/id/R.8910bff2d639d5e0e63ac36097dc36c4?rik=ka7pUrlc%2bJj07A&riu=http%3a%2f%2f2.bp.blogspot.com%2f-fYnToFDx21E%2fUsxFFcjtB4I%2fAAAAAAABDfc%2f29cdXMAWITE%2fs1600%2ffotos-de-verduras-frescas.jpg&ehk=sCeF1RSs52cIkdull8%2bpoOWigtdnn22t0DGpAr4Y3Jc%3d&risl=&pid=ImgRaw&r=0" alt="" width="550" height="350">
+            </div>
+            <div class="col-8 ">
+             <h2 class="parrafo">Las verduras son alimentos saludables que ayudan al desarrollo de los niños, además su contenido calórico es tan bajo, que se convierten, junto a la fruta, en la comida perfecta para los niños que tengan tendencia a la obesidad. Pero no solo son muy útiles para controlar el sobrepeso, también ayudan a la prevención de diversas enfermedades infantiles como pueden ser la diabetes, el colesterol, trastornos digestivos o cáncer. Y, no nos olvidamos que son alimentos ricos en fibra que nos sacian y, por puesto, nos ayudan frente a posibles problemas de estreñimiento. </h2>
+             <h2 class="parrafo">¿Sabes una curiosa forma de que los niños sientan más amor por las verduras? ¡Conocerlas un poco más! Por eso te recomendamos que les digas a tus hijos que te acompañen al mercado la próxima vez y que les cuentes algunas curiosidades como que hay verduras de primavera, verano, otoño e invierno o que la parte blanca de muchas verduras, como el cogollo de la lechuga, tiene menos vitaminas, que la parte verde.</h2><br>
+             <h2>S/15</h2>  
+            </div>
+        </div>
     </div>
-    </div>
-    
-
     <br>
     <button type="submit" class="btn btn-danger" (click)="goback()">Atras</button>
-    <br>
-    
-    
+    <br>  
 </div>
